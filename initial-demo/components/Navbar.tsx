@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { FC } from "react";
 import styles from './Navbar.module.css';
 import  {ActiveLink}  from "./ActiveLink";
 
@@ -23,7 +23,7 @@ const menuItems = [
   },
 ];
 
-export const Navbar = () => {
+export const Navbar: FC = () => {
   return (
     <nav className={styles[ 'menu-container']}>
       {menuItems.map((item) => (
