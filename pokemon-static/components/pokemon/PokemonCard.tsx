@@ -12,7 +12,7 @@ const PokemonCard: FC<Props> = ({ pokemon: { id, name, img } }) => {
   const router = useRouter();
 
   const pokemonSelected = () => {
-    router.push(`/pokemon/${id}`)
+    router.push(`/name/${name}`)
   }
   
   return (
